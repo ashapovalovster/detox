@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>@@title</title>
+
+  <!-- Stylesheets -->
+  <link href="css/main.css" rel="stylesheet">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<div class="age-notify">
+    Имеются противопоказания, необходимо проконсультироваться со специалистом 18+
+</div>
+
+
+<div class="container container--header">
+  <header class="header">
+    <a class="header__logo" href=""><img src="/images/logo.svg" alt="Детокс"></a>
+
+    @@include('../menu/menu.html')
+
+    <div class="contacts">
+      <a href="tel:89061800041" class="contacts__phone">8 (906) 180-00-41</a>
+      <div class="contacts__note">Работаем 24/7</div>
+    </div>
+
+    <button class="btn btn--header jsOpenModalBtn">Заказать звонок</button>
+
+    <button class="sandwich jsSandwich">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+</div>

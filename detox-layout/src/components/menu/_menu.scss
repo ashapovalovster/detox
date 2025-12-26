@@ -1,0 +1,58 @@
+.menu{
+	font-size: 16px;
+	line-height: 25px;
+	display: none;
+	&--active{
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		bottom: 0;
+		background: var(--bg-second);
+		z-index: 999;
+		left: 0;
+		right: 0;
+		height: calc(100vh - 55px);
+		padding: 10px;
+		row-gap: 15px;
+		@media (min-width: $tablet-min){
+			position: absolute;
+			height: auto;
+			top: 160px;
+			width: 240px;
+			left: auto;
+			right: 0;
+			bottom: auto;
+		}
+	}
+	&__item{
+		color: var(--main);
+		transition: 0.2s ease-in;
+		&:hover{
+			color: var(--btn-primary);
+		}
+		&--last{
+			margin-top: auto;
+			@media (min-width: $tablet-min){
+				display: none;
+			}
+			.contacts{
+				margin-bottom: 25px;
+				font-size: 14px;
+				line-height: 20px;
+			}
+			.contacts__phone{
+				margin-bottom: 25px;
+				font-size: 18px;
+			}
+			.btn{
+				width: 100%;
+			}
+		}
+	}
+	@media (min-width: $desktop-min){
+		order: inherit;
+		display: flex;
+		column-gap: 30px;
+		align-items: center;
+	}
+}

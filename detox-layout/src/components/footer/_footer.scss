@@ -1,0 +1,45 @@
+.footer{
+	background: $blue;
+	padding: 28px 0 36px 0;
+	&__nav{
+		display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+  &__logo-img{
+    height: 44px;
+  }
+  &__menu{
+    @media (max-width: $mobile){
+      display: none;
+    }
+  }
+  &__contacts{
+    text-align: right;
+    line-height: 1.250em;
+    @media (min-width: $tablet-min){
+      font-size: 0.889em;
+    }
+    &-item{
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  &__copy{
+  	text-align: center;
+  	margin-top: 16px;
+    font-size: 10px;
+    line-height: 12px;
+  	a{
+  		color: #fff;
+  		text-decoration: none;
+  		&:hover{
+  			text-decoration: underline;
+  		}
+  	}
+  }
+}

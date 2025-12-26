@@ -1,0 +1,40 @@
+<div id="callbackModal" class="modal">
+    <div class="modal__content">
+
+        <div class="modal__header">
+            <h2 class="modal__title">Заказать звонок</h2>
+            <button class="modal__close" id="closeModalBtn"></button>
+        </div>
+
+        <p class="modal__subtitle">
+            Просто оставьте заявку и мы вам перезвоним в ближайшее время
+        </p>
+        <div id="formError"></div>
+        <form id="callbackForm" class="callback-form">
+            <input
+                type="text"
+                id="userName"
+                class="form-input"
+                placeholder="Введите ваше имя"
+                required
+            >
+
+            <input
+                type="tel"
+                id="userPhone"
+                class="form-input"
+                placeholder="+7 999-999-99-99"
+
+                required
+            >
+
+            <button type="submit" class="btn submit-btn">
+                Отправить
+            </button>
+
+            <div class="privacy-notice">
+                Нажимая кнопку «Отправить», вы соглашаетесь с <a href="#" class="privacy-link">политикой конфиденциальности</a>
+            </div>
+        </form>
+    </div>
+</div>
