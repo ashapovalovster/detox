@@ -1,5 +1,20 @@
 <?php
+/*
+структура таблицы
+
+CREATE TABLE `applications` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `phone` varchar(50) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `idx_name_phone_created_at` (`name`,`phone`,`created_at`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+*/
+
 header('Content-Type: application/json; charset=utf-8');
+
+show create database applications
 
 // Настройки БД
 $host = 'localhost';
